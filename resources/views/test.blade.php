@@ -1,5 +1,5 @@
 @component('mail::message')
-Hello {{ $name }}!
+Hello {{ $name }}!!
 <br>
 <h3> {{ $title }}</h3>
 <br>
