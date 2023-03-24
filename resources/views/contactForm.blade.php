@@ -35,30 +35,45 @@
 					Send Mail!
 				</span>
 
-                <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <div class="wrap-input1 validate-input" >
                    <h5> <span>From</span> </h5>
-					<input class="input1" type="text" name="sender" placeholder="Email">
-					<span class="shadow-input1"></span>
+					<input class="input1" type="text" name="sender" id="sender" placeholder="Email">
+					<span style="!color:red"></span>
+                    @error('sender')
+                    <div>{{ $message }}</div>
+                    @enderror
 				</div>
-				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+				<div class="wrap-input1 validate-input">
                    <h5> <span>To</span> </h5>
-					<input class="input1" type="text" name="name" placeholder="Name">
+					<input class="input1" type="text" name="name" id="name" placeholder="Name">
 					<span class="shadow-input1"></span>
+                    @error('name')
+                    <div>{{ $message }}</div>
+                     @enderror
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="email" placeholder="Email">
+				<div class="wrap-input1 validate-input" >
+					<input class="input1" type="text" name="email" id="email" placeholder="Email">
 					<span class="shadow-input1"></span>
+                    @error('email')
+                    <div>{{ $message }}</div>
+                     @enderror
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Title is required">
-					<input class="input1" type="text" name="title" placeholder="Title">
+				<div class="wrap-input1 validate-input" >
+					<input class="input1" type="text" name="title" id="title" placeholder="Title">
 					<span class="shadow-input1"></span>
+                    @error('title')
+                    <div>{{ $message }}</div>
+                     @enderror
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+				<div class="wrap-input1 validate-input" >
 					<textarea class="input1" name="message" placeholder="Message"></textarea>
 					<span class="shadow-input1"></span>
+                    @error('message')
+                    <div>{{ $message }}</div>
+                     @enderror
 				</div>
 
 				<div class="container-contact1-form-btn">

@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MailRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\TestMail;
-
+use Illuminate\Support\Facades\Validator;
 
 class MailController extends Controller
 {
 
-public function sendEmail(Request $request)
+public function sendEmail(MailRequest $request)
 {
     $sender=$request->input('sender');
     $email = $request->input('email');
