@@ -5,14 +5,11 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^10.0",
+        "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
-        "laravel/sanctum": "^3.2",
-        "doctrine/dbal": "^3.0",
-        "spatie/laravel-ignition": "^2.0",
-        "laravel/passport": "^11.0",
+        "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
@@ -20,8 +17,8 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.0"
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
         "psr-4": {
@@ -60,6 +57,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

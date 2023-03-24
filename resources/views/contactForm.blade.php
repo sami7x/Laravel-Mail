@@ -34,47 +34,13 @@
                 <span class="contact1-form-title">
 					Send Mail!
 				</span>
-
-                <div class="wrap-input1 validate-input" >
-                   <h5> <span>From</span> </h5>
-					<input class="input1" type="text" name="sender" id="sender" placeholder="Email">
-					<span style="!color:red"></span>
-                    @error('sender')
-                    <div>{{ $message }}</div>
-                    @enderror
-				</div>
-				<div class="wrap-input1 validate-input">
-                   <h5> <span>To</span> </h5>
-					<input class="input1" type="text" name="name" id="name" placeholder="Name">
-					<span class="shadow-input1"></span>
-                    @error('name')
-                    <div>{{ $message }}</div>
-                     @enderror
-				</div>
-
-				<div class="wrap-input1 validate-input" >
-					<input class="input1" type="text" name="email" id="email" placeholder="Email">
-					<span class="shadow-input1"></span>
-                    @error('email')
-                    <div>{{ $message }}</div>
-                     @enderror
-				</div>
-
-				<div class="wrap-input1 validate-input" >
-					<input class="input1" type="text" name="title" id="title" placeholder="Title">
-					<span class="shadow-input1"></span>
-                    @error('title')
-                    <div>{{ $message }}</div>
-                     @enderror
-				</div>
-
-				<div class="wrap-input1 validate-input" >
-					<textarea class="input1" name="message" placeholder="Message"></textarea>
-					<span class="shadow-input1"></span>
-                    @error('message')
-                    <div>{{ $message }}</div>
-                     @enderror
-				</div>
+              <h5> <span>From</span> </h5>
+                <x-input type="text" name="sender" id="sender" placeholder=" Email"/>
+                <h5> <span>To</span> </h5>
+                <x-input type="text" name="name" id="name" placeholder="Name"/>
+                <x-input type="text" name="email" id="email" placeholder="Receiver email"/>
+                <x-input type="text" name="title" id="title" placeholder="Title"/>
+                <x-input type="text" name="message" id="message" placeholder="Message"/>
 
 				<div class="container-contact1-form-btn">
 					<button class="contact1-form-btn">

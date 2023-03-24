@@ -24,11 +24,11 @@ class MailRequest extends FormRequest
     public function rules()
     {
         return [
-            "sender"=>'required|max:50|email',
-            "name"=>'required|string',
-            "email"=>'required',
-            "title"=>'required',
-            "message"=>'required',
+            "sender"=>'required|max:15|email',
+            "name"=>'required|string|max:15|',
+            "email"=>'required|max:15|',
+            "title"=>'required|max:50|',
+            "message"=>'required|max:100|',
         ];
     }
 }
